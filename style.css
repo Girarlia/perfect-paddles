@@ -1,17 +1,87 @@
-.container{
-  max-width: 960px;
-  margin: 0 auto;
+img {
+  max-width: 100%;
+}
+/*Container Header*/
 
+.container-header{
+  background-color: black;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
-.container-mid{
-  max-width: 560px;
+.site-logo{
+  width: 170px;
+  height: 40px;
+  display: block;
+  margin: 0 auto 0 auto;
+  padding: 10px 0 0 0;
+}
+
+.navigation-bar{
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.navigation-about{
+  list-style-type: none;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0 10px 10px 10px;
+}
+
+.navigation-about-link{
+  text-decoration: none;
+}
+
+.navigation-rentals{
+  list-style-type: none;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0 10px 10px 10px;
+}
+
+.navigation-rentals-link{
+  text-decoration: none;
+}
+
+.navigation-location{
+  list-style-type: none;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0 10px 10px 10px;
+}
+
+.navigation-location-link{
+  text-decoration: none;
+}
+
+/*Container Banner*/
+
+.container-banner{
+  max-width: 860px;
   margin: 0 auto;
   text-align: center;
+  background-image: url("images/kayak-bkgd.jpg") ;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 
 }
 
-button{
+.container-banner h1{
+  color: white;
+}
+
+.container-banner p{
+  display: inline;
+  Background-color: RGBA(0,0,0, .3);
+  color: white;
+  font-style: bold;
+  border-bottom: 100px;
+}
+
+.sign-up-button{
   border-radius: 50px;
   text-decoration: none;
   padding: 11px;
@@ -24,41 +94,58 @@ button{
   border: none;
   display: block;
   margin: 0 auto 0 auto;
-}
 
-img{
-  max-width: 100%;
 }
-/*
-.banner a{
-  text-decoration: none;
-}*/
-/*header{
-  background-color: #000000;
-}
+/*Container About*/
 
-header ul{
-  list-style-type: none;
-}
-
-header li{
-
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.banner{
-  background-image: url("images/kayak-bkgd.jpg");
-  background-size: 100% 100%;
+.container-about{
+  max-width: 860px;
+  margin: 0 auto;
   text-align: center;
-  font-size: 20px;
 }
 
-.banner h1:first-child{
-  font-size: 10px;
+/*Container Rentals*/
+
+.container-Rentals{
+  max-width: 1140px;
+  margin: 0 auto;
+
 }
 
-.banner h1:last-child{
-  font-size: 12px;
-}*/
+/*Container Location*/
+
+.container-location{
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Container Map*/
+
+.container-map{
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+
+ul li a{
+  color: white;
+}
+
+/*tablet*/
+@media(min-width: 600px){
+  img{
+    width: 50%;
+  }
+}
+
+/*desktop*/
+@media(min-width: 1100px){
+  img{
+    width: 40%;
+  }
+}
