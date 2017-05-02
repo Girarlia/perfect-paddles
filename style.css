@@ -1,3 +1,28 @@
+@font-face{
+  font-family: Karla-Bold;
+  src: url(Fonts/Karla-Bold.ttf);
+}
+
+@font-face{
+  font-family: Karla-BoldItalic;
+  src: url(Fonts/Karla-BoldItalic.ttf);
+}
+
+@font-face{
+  font-family: Karla-Italic;
+  src: url(Fonts/Karla-Italic.ttf);
+}
+
+@font-face{
+  font-family: Karla-Regular;
+  src: url(Fonts/Karla-Regular.ttf);
+}
+
+@font-face{
+  font-family: Pacifico;
+  src: url(Fonts/Pacifico.ttf);
+}
+
 img {
   max-width: 100%;
 }
@@ -7,15 +32,32 @@ html{
 }
 /*Container Header*/
 
-header{
-  padding: 0;
-  margin: 0;
-}
-.container-header{
+@media(min-width: 600px){
+.container{
   background-color: black;
-  max-width: 1140px;
-  margin: 0;
+  height:43px;
+  position: fixed;
+  width: 100%;
+  }
 }
+
+.container-header{
+  max-width: 1140px;
+  background-color: black;
+}
+
+@media(min-width: 600px){
+.container-header{
+  max-width: 1140px;
+  margin: 0 auto;
+  position:relative;
+}
+}
+/*@media(min-width: 600px){
+.container-header{
+    width: 100%;
+  }
+}*/
 
 .site-logo{
   width: 170px;
@@ -23,6 +65,17 @@ header{
   display: block;
   margin: 0 auto 0 auto;
   padding: 10px 0 10px 0;
+
+}
+
+@media(min-width: 600px){
+  .site-logo{
+      display: inline-block;
+      margin:0;
+      padding: 0;
+      padding-left: 10px;
+      position: absolute;
+    }
 }
 
 .navigation-bar{
@@ -31,6 +84,13 @@ header{
   margin: 0;
 }
 
+@media(min-width: 600px){
+.navigation-bar{
+  top: 12px;
+  right: 10px;
+  position: absolute;
+  }
+}
 .navigation-about{
   list-style-type: none;
   display: inline-block;
@@ -43,13 +103,14 @@ header{
 .navigation-about-link{
   text-decoration: none;
   color: white;
+
 }
 
 .navigation-rentals{
   list-style-type: none;
   display: inline-block;
   font-weight: bold;
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 10px 15px;
   margin: 0;
 
 }
@@ -76,7 +137,7 @@ header{
 /*Container Banner*/
 
 .container-banner{
-  max-width: 860px;
+  max-width: 1140px;
   height: 320px;
   margin: 0 auto;
   text-align: center;
@@ -91,14 +152,24 @@ header{
   color: white;
   margin:0;
   padding: 45px 5px 5px 5px;
-  font-size: 10px
+  font-size: 15px;
+  font-family: Karla-Regular;
 }
 
-.container-banner-greatOutdoors, .container-banner-fromTheWater{
+.container-banner-greatOutdoors{
+  color: white;
+  margin:0;
+  padding: 10px;
+  font-size: 45px;
+  font-family: Pacifico;
+}
+
+.container-banner-fromTheWater{
   color: white;
   margin:0;
   padding: 5px;
-  font-size: 35px;
+  font-size: 30px;
+  font-family: Pacifico;
 }
 
 .container-banner-explanation{
@@ -163,8 +234,26 @@ header{
   font-family: cursive;
 }
 
+@media(min-width: 600px){
+  .container-rentals-paragraph{
+    width:50%;
+    float: left;
+  }
+  .container-rentals-table{
+    width:50%;
+    float: right;
+  }
+  .clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
 table{
   border-collapse: collapse;
+  border-sizing: border-box;
 }
 
 table, .tableHead, .tableData1, .tableData2, .tableData3 {
@@ -253,4 +342,15 @@ table, .tableHead, .tableData1, .tableData2, .tableData3 {
   img{
     width: 40%;
   }
+
+.container-header{
+
+}
+.site-logo{
+  margin: 0;
+  display: inline;
+}
+
+}
+
 }

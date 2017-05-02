@@ -2,7 +2,9 @@
 <html>
   <head>
     <title> Perfect Paddles </title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
@@ -13,17 +15,17 @@
 
   <body>
 
-<header>
-  <div class= "container-header">
-  <img class= "site-logo" src="images/perfect-paddles-logo.svg" alt="Perfect Paddles Logo">
-  <nav>
-  <ul class= "navigation-bar">
-    <li class= "navigation-about"><a class = "navigation-about-link" href="#about">About</a></li>
-    <li class= "navigation-rentals"><a class = "navigation-rentals-link" href="#Rentals">Rentals</a></li>
-    <li class= "navigation-location"><a class = "navigation-location-link" href="#location">Location</a></li>
-  </ul>
-  </nav>
-</div>
+<header class="container">
+    <div class= "container-header">
+      <img class= "site-logo" src="images/perfect-paddles-logo.svg" alt="Perfect Paddles Logo">
+      <!-- <nav> -->
+      <ul class= "navigation-bar">
+        <li class= "navigation-about"><a class = "navigation-about-link" href="#about">About</a></li>
+        <li class= "navigation-rentals"><a class = "navigation-rentals-link" href="#Rentals">Rentals</a></li>
+        <li class= "navigation-location"><a class = "navigation-location-link" href="#location">Location</a></li>
+      </ul>
+      <!-- </nav> -->
+  </div>
 </header>
 
 
@@ -56,12 +58,14 @@
 <section>
   <div class= "container-Rentals">
   <h2 class= "container-rentals-title">Rentals</h2>
-
+  <div class="clearfix">
+  <div class="container-rentals-paragraph">
   <p> All rental prices include basic paddles, life jackets, splash protection, and a safety demonstration.</p>
   <p> Please note that we require 24 hours notice for all cancellations and late returns will be charged accordingly. </p>
   <p> <a href="tel:+604-604-6040">604-604-6040</a> to book now!</p>
+</div>
 
-  <table>
+  <table class="container-rentals-table">
     <thead>
       <tr class= "tableRow">
         <th class="tableHead"> Duration </th>
@@ -92,6 +96,7 @@
       </tr>
     </tbody>
   </table>
+</div>
 </div>
 </section>
 
