@@ -27,8 +27,9 @@ img {
   max-width: 100%;
 }
 
-html{
-  line-height=0;
+
+body{
+  line-height: 16px;
 }
 /*Container Header*/
 
@@ -36,32 +37,21 @@ html{
 .container{
   background-color: black;
   height:43px;
-  position: fixed;
   width: 100%;
   }
 }
 
 .container-header{
-  max-width: 1140px;
   background-color: black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
-@media(min-width: 600px){
-.container-header{
-  max-width: 1140px;
-  margin: 0 auto;
-  position:relative;
-}
-}
-/*@media(min-width: 600px){
-.container-header{
-    width: 100%;
-  }
-}*/
 
 .site-logo{
-  width: 170px;
-  height: 40px;
+  width: 100%;
+  height: 34px;
   display: block;
   margin: 0 auto 0 auto;
   padding: 10px 0 10px 0;
@@ -70,11 +60,7 @@ html{
 
 @media(min-width: 600px){
   .site-logo{
-      display: inline-block;
-      margin:0;
-      padding: 0;
-      padding-left: 10px;
-      position: absolute;
+    width: auto;
     }
 }
 
@@ -82,97 +68,71 @@ html{
   text-align: center;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 @media(min-width: 600px){
 .navigation-bar{
-  top: 12px;
-  right: 10px;
-  position: absolute;
+  width: auto;
   }
 }
-.navigation-about{
+.navigation-tab{
   list-style-type: none;
   display: inline-block;
-  font-weight: bold;
   padding: 0 10px 10px 10px;
   margin: 0;
+  text-transform: uppercase;
+  font-family: Karla-Regular;
+  font-size: 16px;
 
 }
 
-.navigation-about-link{
-  text-decoration: none;
-  color: white;
-
-}
-
-.navigation-rentals{
-  list-style-type: none;
-  display: inline-block;
-  font-weight: bold;
-  padding: 0 10px 10px 15px;
-  margin: 0;
-
-}
-
-.navigation-rentals-link{
+.navigation-link{
   text-decoration: none;
   color: white;
 }
 
-.navigation-location{
-  list-style-type: none;
-  display: inline-block;
-  font-weight: bold;
-  padding: 0 10px 10px 10px;
-  margin: 0;
-
-}
-
-.navigation-location-link{
-  text-decoration: none;
-  color: white;
-}
 
 /*Container Banner*/
 
-.container-banner{
-  max-width: 1140px;
-  height: 320px;
-  margin: 0 auto;
+.banner{
   text-align: center;
-  background-image: url("images/kayak-bkgd.jpg") ;
+  background: linear-gradient(to top, rgba(0, 0, 0, .35) 0%,
+      rgba(0, 0, 0, .25) 100%),
+    url("images/kayak-bkgd.jpg");
+  /*background-image: url("images/kayak-bkgd.jpg") ;*/
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  height:375px;
 
 }
 
-.container-banner-enjoyThe{
+.banner-enjoyThe{
   color: white;
   margin:0;
-  padding: 45px 5px 5px 5px;
+  padding: 45px 5px 15px 5px;
   font-size: 15px;
   font-family: Karla-Regular;
 }
 
-.container-banner-greatOutdoors{
+.banner-greatOutdoors{
   color: white;
   margin:0;
-  padding: 10px;
+  padding: 15px 0 20px 0;
   font-size: 45px;
   font-family: Pacifico;
 }
 
-.container-banner-fromTheWater{
+.banner-fromTheWater{
   color: white;
   margin:0;
-  padding: 5px;
+  padding: 20px 0 20px 0;
   font-size: 30px;
   font-family: Pacifico;
 }
 
-.container-banner-explanation{
+.banner-explanation{
   display: table;
   Background-color: RGBA(0,0,0, .6);
   border-bottom: 100px;
@@ -180,7 +140,7 @@ html{
   margin: 10px 50px 25px 50px;
 
 }
-.container-banner-explanation-text{
+.banner-explanation-text{
   color: white;
   font-style: bold;
   display: table-cell;
@@ -210,43 +170,56 @@ html{
 }
 /*Container About*/
 
-.container-about{
+.about{
   max-width: 860px;
   margin: 0 auto;
   text-align: center;
 }
 
-.container-about-title{
+.title{
   color: #646464;
-  font-family: cursive;
+  font-family: Pacifico;
+  font-size: 2em;
+  padding: 50px;
+
+}
+
+.paragraph{
+  color:#2d2d2d;
+  line-height: 2em;
+  font-family: Karla-Regular;
+  padding-bottom: 50px;
+
 }
 /*Container Rentals*/
 
-.container-Rentals{
-  max-width: 1140px;
-  margin: 0 auto;
-
+.Rentals{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
-.container-rentals-title{
-  color: #646464;
-  text-align: center;
-  font-family: cursive;
-}
 
 @media(min-width: 600px){
-  .container-rentals-paragraph{
+  .rentals-paragraph{
     width:50%;
     float: left;
   }
-  .container-rentals-table{
+
+.paragraph {
+  margin: 10px;
+}
+
+.paragraph p{
+  margin-bottom: 10px;
+}
+
+  .rentals-table{
     width:50%;
-    float: right;
   }
   .clearfix:after{
     content: "";
-    display: table;
-    clear: both;
+
   }
 
 }
@@ -266,7 +239,7 @@ table, .tableHead, .tableData1, .tableData2, .tableData3 {
   font-size: 14px;
 }
 
-.tableData2, .tableData3{
+.tableData2{
   text-align: center;
   padding: 5px;
 }
@@ -277,48 +250,51 @@ table, .tableHead, .tableData1, .tableData2, .tableData3 {
 }
 /*Container Location*/
 
-.container-location{
+.location{
   max-width: 860px;
   margin: 0 auto;
   text-align: center;
 }
 
-.container-location-title{
-  color: #646464;
-  text-align: center;
-  font-family: cursive;
+.location .paragraph{
+  padding-bottom: 15px;
+}
+
+.tableRow:hover{
+  background-color: yellow;
 }
 
 /*Container Map*/
 
-.container-map{
-  max-width: 860px;
-  margin: 0 auto;
+.map{
+  width: 100%;
+  margin: 0 5px 0 5px;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 /*Container Footer*/
 
-.container-footer{
+.footer{
   background-color: #242424;
 }
 
-.container-footer-copyright, .container-footer-address{
+.footer-copyright, .footer-address{
   text-align: center;
   color: white;
 }
 
-.container-footer-copyright:first-child{
+.footer-copyright:first-child{
   padding-top: 10px;
 }
 
-.container-footer-contactInfo{
+.footer-contactInfo{
   display: inline-block;
   margin: 0 auto 0 auto;
   color: white;
 }
 
-.container-footer-allLinks{
+.footer-allLinks{
   text-align: center;
   padding: 0;
   margin: 0;
