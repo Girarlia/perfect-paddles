@@ -30,22 +30,23 @@ img {
 
 body{
   line-height: 16px;
+  font-size: 16px;
 }
 /*Container Header*/
 
 
 .container-header{
   background-color: black;
+}
+
+.container-header2{
+  max-width:960px;
+  margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
-@media (min-width: 600px){
-  .container-header{
-  align-items: center;
-  }
-}
 
 .site-logo{
   width: 100%;
@@ -61,21 +62,23 @@ body{
     width: auto;
     height: 45px;
     padding-left: 10px;
+    margin: 0;
     }
 }
 
 .navigation-bar{
   text-align: center;
   padding: 0 0 10px;
-  margin: 0;
-  width: 100%;
+  margin: 0 auto;
 }
 
 @media(min-width: 600px){
 .navigation-bar{
-  width: auto;
   padding-right: 10px;
   padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  margin: 0;
   }
 }
 .navigation-tab{
@@ -222,6 +225,15 @@ body{
   margin: 0 auto;
 }
 
+.about-photos{
+  margin: 0 15px;
+}
+
+.container img{
+  box-shadow: 2px 2px 2px #888888;
+  margin-bottom: 10px;
+}
+
 @media (min-width: 600px){
 .about-photos{
     display: flex;
@@ -262,7 +274,7 @@ body{
 }
 
 .paragraph p{
-  margin-bottom: 20px;
+  margin: 0 0 20px 15px;
   line-height: 1.5;
 }
 
@@ -289,11 +301,6 @@ body{
   font-weight: bold;
 }
 
-/*@media (min-width: 600px){
-  .tableHead{
-    padding: 10px 50px;
-  }
-}*/
 
 .tableData2{
   text-align: center;
@@ -323,11 +330,24 @@ body{
 
 /*Container Map*/
 
-.map{
-  width: 100%;
-  padding-bottom: 20px;
+iframe{
+  display: block;
+  margin: 0 10px 20px 10px;
+  width: 100%
 }
 
+/*.map{
+  width: 100%;
+  padding-bottom: 20px;
+}*/
+
+@media (min-width: 600px){
+  iframe{
+    max-width: 960px;
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+}
 /*Container Footer*/
 
 .footer{
@@ -346,10 +366,7 @@ body{
     justify-content: space-between;
     padding: 0;
   }
-
-  /*.footer-text{
-    width: 50%
-  }*/
+}
 
 @media(min-width: 600px){
   .footer-text{
@@ -360,16 +377,15 @@ body{
     justify-content: center;
   }
 }
-  /*.footer-social-media-links{
-    width: 50%;
-  }*/
 
-}
-
-.footer-copyright, .footer-address{
+.footer-copyright, .footer-copyright2, .footer-address{
   text-align: center;
   color: white;
   font-family: Karla-Regular;
+}
+
+.footer-copyright2, .footer-link{
+  margin-bottom: 15px;
 }
 
 .footer-address{
@@ -449,15 +465,10 @@ body{
 
 @media(min-width: 600px){
   .footer i{
-    padding: 7px;
+    padding: 6px;
   }
 }
 
-
-.site-logo{
-  margin: 0;
-  display: inline;
-}
 
 }
 
