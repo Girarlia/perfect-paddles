@@ -384,11 +384,8 @@ footer{
   background-color: #242424;
 }
 
-@media (min-width: 600px){
-  footer{
-    display: flex;
-    justify-content: space-between;
-  }
+footer li{
+  list-style: none;
 }
 @media (min-width: 600px){
   footer{
