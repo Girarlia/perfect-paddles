@@ -1,0 +1,503 @@
+@font-face{
+  font-family: Karla;
+  src: url(Fonts/Karla-Bold.ttf);
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: Karla;
+  src: url(Fonts/Karla-BoldItalic.ttf);
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: Karla;
+  src: url(Fonts/Karla-Italic.ttf);
+  font-style:italic;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: Karla;
+  src: url(Fonts/Karla-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: Pacifico;
+  src: url(Fonts/Pacifico.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body{
+  line-height: 16px;
+  font-size: 16px;
+  font-family: Karla;
+  font-weight: normal;
+  font-style: normal;
+}
+/*Container Header*/
+
+header{
+  background-color: black;
+  position: fixed;
+  width: 100%;
+}
+
+
+.container-header{
+  max-width:960px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+
+.site-logo{
+  width: 100%;
+  height: 34px;
+  display: block;
+  margin: 0 auto 0 auto;
+  padding: 5px 0 5px 0;
+
+}
+
+@media(min-width: 600px){
+  .site-logo{
+    width: auto;
+    height: 45px;
+    padding-left: 10px;
+    margin: 0;
+    }
+}
+
+.navigation-bar{
+  text-align: center;
+  padding: 0 0 10px;
+  margin: 0 auto;
+}
+
+@media(min-width: 600px){
+.navigation-bar{
+  padding-right: 10px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  }
+}
+.navigation-tab{
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+
+}
+
+.navigation-link{
+  text-decoration: none;
+  color: white;
+}
+
+
+/*Container Banner*/
+
+.banner{
+  text-align: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, .55) 0%,
+      rgba(0, 0, 0, .25) 100%),
+    url("images/kayak-bkgd.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height:375px;
+
+}
+
+.banner-enjoyThe{
+  color: white;
+  margin:0;
+  padding: 90px 5px 15px 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.banner-greatOutdoors{
+  color: white;
+  margin:0;
+  padding: 15px 0 20px 0;
+  font-size: 45px;
+  font-family: Pacifico;
+  text-shadow: 2px 3px 3px grey;
+}
+
+@media (min-width: 600px){
+  .banner-greatOutdoors{
+    font-size: 65px;
+    padding-bottom: 35px;
+  }
+}
+
+.banner-fromTheWater{
+  color: white;
+  margin:0;
+  padding: 20px 0 20px 0;
+  font-size: 25px;
+  font-family: Pacifico;
+  text-shadow: 2px 3px 3px grey;
+}
+
+@media (min-width: 600px){
+  .banner-fromTheWater{
+    font-size: 30px;
+  }
+}
+
+.banner-explanation{
+  display: table;
+  Background-color: RGBA(0,0,0, .6);
+  border-bottom: 100px;
+  padding: 7px;
+  margin: 10px 50px 25px 50px;
+
+}
+
+@media (min-width: 600px){
+  .banner-explanation{
+    margin: 10px auto 25px auto;
+  }
+}
+.banner-explanation-text{
+  color: white;
+  font-style: bold;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+.sign-up-button{
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 11px;
+  background-color: #E2574C;
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  border: none;
+  display: block;
+  margin: 0 auto 50px auto;
+}
+
+@media (min-width: 600px){
+  .sign-up-button{
+    transition: color, 0.5s, linear, 0s;
+  }
+
+  .sign-up-button:hover{
+    background-color:#b64036;
+  }
+}
+
+.sign-up-button-link{
+  text-decoration: none;
+}
+/*Container About*/
+
+.about{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title{
+  color: #646464;
+  font-family: Pacifico;
+  font-size: 2em;
+  padding: 45px 0;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.paragraph{
+  color:#2d2d2d;
+  line-height: 2em;
+  padding-bottom: 50px;
+  font-size: 15px;
+}
+
+@media (min-width: 600px){
+  .paragraph{
+    max-width: 680px;
+    margin: 0 auto;
+  }
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about-photos{
+  margin: 0 15px;
+}
+
+.container img{
+  box-shadow: 2px 2px 2px #888888;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 600px){
+.about-photos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img{
+    max-width: 32%;
+
+  }
+}
+/*Container Rentals*/
+
+.Rentals-content{
+  display:flex;
+  flex-flow: row wrap;
+}
+
+@media (min-width: 600px){
+  .Rentals-content{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.Rentals .paragraph {
+  width: 90%;
+  padding-bottom: 0;
+}
+
+@media (min-width: 600px){
+  .Rentals .paragraph {
+    width: 49%;
+    padding-bottom: 0;
+  }
+}
+
+.paragraph p{
+  margin: 0 0 20px 15px;
+  line-height: 1.5;
+}
+
+@media (min-width: 600px){
+  .rentals-table {
+    width: 49%;
+  }
+}
+
+.rentals-table{
+  border-collapse: collapse;
+  border-sizing: border-box;
+}
+
+.rentals-table, .tableHead, .tableData1, .tableData2, .tableData3 {
+  border:1px solid black;
+  margin: 0 auto;
+}
+
+.tableHead{
+  background-color: #E6E6E6;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.tableData2{
+  text-align: center;
+  padding: 5px;
+}
+
+.tableData1{
+  padding-left: 5px;
+  text-align: left;
+}
+
+/*Container Location*/
+
+.location{
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.location .paragraph{
+  padding-bottom: 15px;
+}
+
+.tableRow:hover{
+  background-color: yellow;
+}
+
+/*Container Map*/
+
+iframe{
+  display: block;
+  margin: 0 10px 20px 10px;
+  width: 100%
+}
+
+/*.map{
+  width: 100%;
+  padding-bottom: 20px;
+}*/
+
+@media (min-width: 600px){
+  iframe{
+    max-width: 960px;
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+}
+/*Container Footer*/
+
+footer{
+  background-color: #242424;
+}
+
+@media (min-width: 600px){
+  footer{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 600px){
+  footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+@media(min-width: 600px){
+  .footer-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+    justify-content: center;
+  }
+}
+
+.footer-copyright, .footer-copyright2, .footer-address{
+  text-align: center;
+  color: white;
+}
+
+.footer-copyright2, .footer-link{
+  margin-bottom: 15px;
+}
+
+.footer-address{
+  color: #969696;
+}
+
+.footer-copyright:first-child{
+  padding-top: 50px;
+}
+
+@media (min-width: 600px){
+  .footer-copyright:first-child{
+  padding-top: 0;
+  }
+}
+
+.footer-contactInfo{
+  display: inline-block;
+  margin: 0 auto 0 auto;
+  color: white;
+}
+
+.footer-allLinks{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+
+}
+
+footer p{
+  line-height: 1.5;
+}
+
+
+.social-media-links{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 40px 50px;
+}
+
+@media (min-width: 600px){
+  .social-media-links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+.nav-link{
+  color: white;
+  text-decoration: none;
+  padding: 40px 12px;
+}
+
+@media (min-width: 600px){
+  .nav-link{
+    padding: 40px 30px;
+  }
+}
+
+.footer-social-media-word{
+  display: none;
+}
+
+@media (min-width: 600px){
+  .footer-social-media-word{
+    display: inline-block;
+  }
+}
+
+@media(min-width: 600px){
+  footer i{
+    padding: 6px;
+  }
+}
+
+
+}
+
+}
