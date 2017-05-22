@@ -49,10 +49,7 @@ body{
 
 header{
   background-color: black;
-  position: fixed;
-  width: 100%;
 }
-
 
 .container-header{
   max-width:960px;
@@ -129,9 +126,9 @@ header{
 .banner-enjoyThe{
   color: white;
   margin:0;
-  padding: 90px 5px 15px 5px;
+  padding: 45px 5px 15px 5px;
   font-size: 12px;
-  font-weight: bold;
+  text-weight: bold;
   text-transform: uppercase;
 }
 
