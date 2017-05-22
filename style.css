@@ -144,7 +144,7 @@ header{
   padding: 15px 0 20px 0;
   font-size: 45px;
   font-family: Pacifico;
-  text-shadow: 2px 3px 3px grey;
+  text-shadow: 2px 2px 2px grey;
 }
 
 @media (min-width: 600px){
@@ -160,7 +160,7 @@ header{
   padding: 20px 0 20px 0;
   font-size: 25px;
   font-family: Pacifico;
-  text-shadow: 2px 3px 3px grey;
+  text-shadow: 2px 2px 2px grey;
 }
 
 @media (min-width: 600px){
