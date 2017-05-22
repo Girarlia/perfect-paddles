@@ -319,7 +319,7 @@ header{
 }
 
 .rentals-table, .tableHead, .tableData1, .tableData2, .tableData3 {
-  border:1px solid black;
+  border:1px solid #c8c8c8;
   margin: 0 auto;
 }
 
@@ -341,6 +341,10 @@ header{
   text-align: left;
 }
 
+.tableRow:hover{
+  background-color: #fbf6d9;
+}
+
 /*Container Location*/
 
 .location{
@@ -353,9 +357,6 @@ header{
   padding-bottom: 15px;
 }
 
-.tableRow:hover{
-  background-color: yellow;
-}
 
 /*Container Map*/
 
